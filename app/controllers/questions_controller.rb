@@ -1,5 +1,9 @@
 class QuestionsController < ApplicationController
-
+  def destroy
+    @question = Question.find_by id: params[:id]
+    @question.destroy
+    redirect_to questions_path
+  end
   def edit
     @question = Question.find_by id: params[:id]
   end

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get '/questions/new', to: 'questions#new'
   # get '/questions/:id/edit', to: 'questions#edit'
   # post '/questions', to: 'questions#create'
+  #get '/questions/:id/destroy%20(.:format)', to: 'questions#index'
 
   root 'pages#index'
 end
